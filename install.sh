@@ -18,5 +18,5 @@ cp "$DIR/wireplumber.conf.d/51-sof-essx8336-auto-profile.conf" \
 systemctl --user daemon-reload
 systemctl --user enable --now headphone-jack-switch.service
 
-echo "Listo. Reinicia PipeWire/WirePlumber una vez para aplicar la regla de auto-profile:"
+echo "Done. Restart PipeWire/WirePlumber once to apply the auto-profile rule:"
 echo "  systemctl --user restart wireplumber pipewire pipewire-pulse"
