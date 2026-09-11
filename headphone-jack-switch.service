@@ -1,0 +1,11 @@
+[Unit]
+Description=Auto-switch audio profile between speakers and headphones on jack plug/unplug
+After=pipewire.service wireplumber.service
+
+[Service]
+ExecStart=%h/.local/bin/headphone-jack-switch.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
